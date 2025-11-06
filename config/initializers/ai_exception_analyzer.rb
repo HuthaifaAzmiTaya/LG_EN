@@ -1,3 +1,4 @@
+require Rails.root.join("lib", "ai_exception_analyzer")
 AiExceptionAnalyzer.configure do |config|
     config.ollama_host = ENV.fetch("AI_EXCEPTION_OLLAMA_HOST", "http://localhost:11434")
     config.model_name = ENV.fetch("AI_EXCEPTION_OLLAMA_MODEL", "qwen2.5-coder:7b")
